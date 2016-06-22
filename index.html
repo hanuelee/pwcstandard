@@ -1,0 +1,31 @@
+---
+---
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body data-spy="scroll" data-target="#sidebar-wrapper" data-offset-top="100">
+		{% include header.html %}
+		<div class="container">
+			<div class="row">
+				<!-- Sidebar -->
+				<div class="col-md-3" id="sidebar-wrapper">
+                    <ul class="nav nav-stacked affix-top" id="sidebar" data-spy="affix" data-offset-top="100">
+                        {% for page in site.posts %}
+                        {% capture sectionId %}{{ page.title | downcase | replace:" ","-"}}{% endcapture %}
+                        <li><a href="#{{sectionId}}">{{ page.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+				</div><!-- Sidebar end -->
+				<!-- Content -->
+				<div class="col-md-9">
+					{{ site.posts }}
+				</div><!-- Content end -->
+			</div>
+		</div>
+        {% include footer.html %}
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/pwc-script.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

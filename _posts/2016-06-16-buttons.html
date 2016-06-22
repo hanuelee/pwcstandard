@@ -1,0 +1,54 @@
+---
+layout: post
+title: "Buttons"
+description: "Buttons are used to signal actions."
+---
+<div class="docs-subsection">
+    <h2>Options</h2>
+    <p>
+        Use pre-styled buttons to quickly create various buttons.
+    </p>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs example-tabs">
+        <li class="active"><a data-target="#primary-buttons" data-toggle="tab">Primary Buttons</a></li>
+        <li><a data-target="#secondary-buttons" data-toggle="tab">Secondary Buttons</a></li>
+    </ul><!-- Tabs end -->
+    <!-- Tab Content -->
+    <div class="tab-content">
+        <!-- Primary Buttons -->
+        <div class="tab-pane active" id="primary-buttons">
+            <!-- Example -->
+            <div class="panel panel-default style-example">
+                <div class="panel-body">
+                    <button type="button" class="btn btn-default pwc-btn-default">Default</button>
+                    <button type="button" class="btn btn-primary pwc-btn-primary-blue">Primary Blue</button>
+                    <button type="button" class="btn btn-primary pwc-btn-primary-gold">Primary Gold</button>
+                    <button type="button" class="btn btn-primary pwc-btn-primary-green">Primary Green</button>
+                    <button type="button" class="btn btn-primary pwc-btn-primary-red">Primary Red</button>
+                </div>
+            </div><!-- Example end -->
+            <!-- Code -->
+            <div class="style-code">
+                {% include code_snippets/buttons/options-primary-buttons.html %}
+            </div><!-- Code end -->
+        </div><!-- Primary Buttons end -->
+        <!-- Secondary Buttons -->
+        <div class="tab-pane" id="secondary-buttons">
+            <!-- Example -->
+            <div class="panel panel-default style-example">
+                <div class="panel-body">
+                    <button type="button" class="btn pwc-btn-secondary-blue">Secondary Blue</button>
+                    <button type="button" class="btn pwc-btn-secondary-gold">Secondary Gold</button>
+                    <button type="button" class="btn pwc-btn-secondary-green">Secondary Green</button>
+                    <button type="button" class="btn pwc-btn-secondary-red">Secondary Red</button>
+                    <button type="button" class="btn pwc-btn-secondary-skyblue">Secondary Skyblue</button>
+                    <button type="button" class="btn pwc-btn-secondary-cream">Secondary Cream</button>
+                </div>
+            </div><!-- Example end -->
+            <!-- Code -->
+            <div class="style-code">
+                {% include code_snippets/buttons/options-secondary-buttons.html %}
+            </div><!-- Code end -->
+        </div><!-- Secondary Buttons end -->
+    </div><!-- Tab Content end -->
+</div>

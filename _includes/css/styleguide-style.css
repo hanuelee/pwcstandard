@@ -1,0 +1,218 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+div {
+    word-wrap: break-word;
+}
+.lead {
+    font-size: 20px;
+}
+.pwc-style-guide-navbar {
+    background-color: #386BB3;
+    border-radius: 0;
+}
+.pwc-style-guide-navbar .navbar-header > a {
+    color: #FFFFFF;
+}
+/*========================================*/
+/*                  Sidebar               */
+/*========================================*/
+.affix {
+    top: 30px;
+}
+#sidebar.nav .nav {
+    display: none;
+    font-size: 12px;
+}
+#sidebar.nav > li.active > ul {
+    display: block;
+}
+#sidebar.nav li > a:hover {
+    background-color: #B5E3F0;
+}
+#sidebar.nav > li.active {
+    border-right: solid 4px #B5E3F0;
+}
+#sidebar.nav > li li.active {
+    border-left: solid 4px #B5E3F0;
+}
+#sidebar.nav > li > ul a {
+    padding: 5px 15px;
+}
+/*----- Responsive -----*/
+@media only screen and (max-width : 1200px) { }
+@media only screen and (max-width : 979px) {
+    #sidebar {
+        position: static;
+        height: auto;
+    }
+}
+@media only screen and (max-width : 767px) { }
+@media only screen and (max-width : 480px) { }
+@media only screen and (max-width : 320px) { }
+/*=============== Sidebar end ===============*/
+
+/*========================================*/
+/*             Section styles             */
+/*========================================*/
+.tab-content {
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+span.alert-header {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*=============== Section styles end ===============*/
+
+/*========================================*/
+/*             Visual Identity            */
+/*========================================*/
+.palette-table {
+    table-layout: fixed;
+}
+.palette-table td {
+    text-align: center;
+    vertical-align: middle !important;
+    font-weight: bold;
+}
+.palette-bg {
+    height: 150px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.typeface-example-light,
+.typeface-example-dark {
+    font-size: 50px;
+}
+.typeface-example-dark {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+/*=============== Visual identity end ===============*/
+
+/*========================================*/
+/*               Glyphicons               */
+/*========================================*/
+#available-glyphicons > .pwc-accordion-content-wrapper > .alert-info {
+    margin-bottom: 15px !important;
+}
+#available-glyphicons ul {
+    list-style: none;
+    padding: 0;
+}
+#available-glyphicons ul > li {
+    display: inline-block;
+}
+.glyphicon-popover {
+    background-color: #FFFFFF;
+    padding: 0;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+.glyphicon-popover.active.focus,
+.glyphicon-popover.active:focus,
+.glyphicon-popover.active:hover,
+.glyphicon-popover:active.focus,
+.glyphicon-popover:active:focus,
+.glyphicon-popover:active:hover {
+    box-shadow: none;
+}
+.glyphicon-popover > .glyphicons {
+    font-size: 24px;
+}
+.glyphicon-popover > .glyphicons:hover,
+.glyphicon-popover > .glyphicons:focus {
+    color: #2D6CB5;
+}
+/*----- Responsive -----*/
+@media only screen and (max-width : 1200px) { }
+@media only screen and (max-width : 979px) { }
+@media only screen and (max-width : 767px) { }
+@media only screen and (max-width : 480px) { }
+@media only screen and (max-width : 320px) { }
+/*=============== Glyphicons end ===============*/
+
+/*========================================*/
+/*               Navigation               */
+/*========================================*/
+#big-navbar-oc .panel-body,
+#small-navbar-oc .panel-body {
+    padding: 15px 0 15px 0; /* To hide overflow including padding */
+    border-width: 0 15px 0 15px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    overflow: hidden;
+    height: 300px;
+}
+
+.style-example .pwc-navbar-menu-offcanvas > .nav {
+    position: absolute;
+    top: 0;
+    height: 280px;
+}
+.style-example #side-menu-big,
+.style-example .active #side-menu-big > .nav {
+    left: 100% !important;
+}
+/*----- Responsive -----*/
+@media only screen and (max-width : 1200px) { }
+@media only screen and (max-width : 979px) { }
+@media only screen and (max-width : 767px) {
+    .style-example #side-menu-small,
+    .style-example .active #side-menu-small > .nav {
+        left: -40% !important;
+    }
+}
+@media only screen and (max-width : 480px) {
+    .style-example #side-menu-small,
+    .style-example .active #side-menu-small > .nav {
+        left: -70% !important;
+    }
+}
+@media only screen and (max-width : 320px) { }
+/*=============== Navigation end ===============*/
+
+/*========================================*/
+/*                 Buttons                */
+/*========================================*/
+.style-example > .panel-body .btn {
+    margin: 5px;
+}
+/*=============== Buttons end ===============*/
+
+/*========================================*/
+/*                  Footer                */
+/*========================================*/
+.pwc-footer {
+    margin-top: 0;
+}
+.style-example .pwc-footer {
+    position: static;
+}
+/*=============== Footer end ===============*/
+/*========================================*/
+/*                 Samples                */
+/*========================================*/
+#sample-thumbnail-collection.row .col-md-6 {
+    margin-bottom: 35px;
+}
+a.samples-thumbnail {
+    display: block;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    -moz-box-shadow: 1px 1px 1px #E6E6E6;
+    -webkit-box-shadow: 1px 1px 1px #E6E6E6;
+    box-shadow: 1px 1px 1px #E6E6E6;
+}
+.samples-thumbnail > img {
+    max-width: 100%;
+}
+object.svg-design {
+    width: 100%;
+}

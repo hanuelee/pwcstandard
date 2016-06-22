@@ -1,0 +1,156 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet href="design-style.css" type="text/css"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     version="1.1"
+     baseProfile="full"
+     viewBox="0 0 960 400"
+     preserveAspectRatio="xMidYMid meet">
+        <!-- Drop shadow filter for dropdowns on navigation bars -->
+        <filter id="dropdownShadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+            <feOffset dx="0" dy="4" result="offsetblur" />
+            <feFlood flood-color="#D8D8D8" />
+            <feComposite in2="offsetblur" operator="in" />
+            <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter><!-- Drop shadow filter end -->
+
+        <g class="svg-pwc-navbar-big">
+            <rect class="svg-pwc-navbar-big-lg" x="80" y="130" width="800" height="100" /><!-- Navbar body -->
+            <!-- Navigation bar header -->
+            <g class="svg-pwc-navbar-big-header">
+                <ellipse class="svg-pwc-navbar-big-logo-color" rx="40.5" ry="47.5" cx="135.5" cy="180" /><!-- Logo -->
+                <text x="190" y="174">
+                    <!-- Title -->
+                    Prince William County
+                    <tspan x="190" dy="24">Application Name</tspan>
+                </text>
+            </g><!-- Navigation bar header end -->
+            <g class="svg-pwc-navbar-big-nav">
+                <!-- Home -->
+                <g class="svg-pwc-navbar-big-nav-item">
+                    <rect x="528" y="130" width="70" height="100" />
+                    <text x="563" y="180" text-anchor="middle">Home</text>
+                </g><!-- Home end -->
+                <!-- FAQs -->
+                <g class="svg-pwc-navbar-big-nav-item">
+                    <rect class="active" x="613" y="130" width="74" height="100" />
+                    <text class="active" x="647" y="180">FAQs</text>
+                    <path d="M665 174 l4 4 l4 -4 Z" fill="#2D6CB5" /><!-- Caret -->
+                    <!-- Dropdown -->
+                    <g class="svg-nav-dropdown-lg">
+                        <rect x="529" y="231" rx="2" ry="2" width="158" height="107" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="1" filter="url(#dropdownShadow)" /><!-- Dropdown body -->
+                        <g>
+                            <rect class="hover" x="529.5" y="236" width="156.5" height="26" />
+                            <text x="549" y="254">This question</text>
+                        </g>
+                        <g>
+                            <rect x="529.5" y="263" width="156.5" height="26" />
+                            <text x="549" y="280">That question</text>
+                        </g>
+                        <path d="M529.5 298 l157 0" stroke-width="1" shape-rendering="crispEdges" stroke="#CCCCCC" />
+                        <g>
+                            <rect x="529.5" y="303" width="156.5" height="26" />
+                            <text x="549" y="320">Ask a question</text>
+                        </g>
+                    </g><!-- Dropdown end -->
+                </g><!-- FAQs end -->
+                <!-- Register -->
+                <g class="svg-pwc-navbar-big-nav-item">
+                    <rect class="hover" x="702" y="130" width="83" height="100" />
+                    <text class="hover" x="743.5" y="180">Register</text>
+                </g><!-- Register end -->
+                <!-- Login -->
+                <g class="svg-pwc-navbar-big-nav-item">
+                    <rect x="800" y="130" width="65.5" height="100" />
+                    <text x="833" y="180">Login</text>
+                </g><!-- Login end -->
+            </g>
+
+            <g class="svg-measurements">
+                <!-- Body -->
+                <g>
+                    <text x="135.5" y="183" style="fill: #FFFFFF;">80 x 95</text>
+                    <g>
+                        <path d="M80 100 l0 20 m0 -10 l375 0 m50 0 L880 110 m0 -10 l0 20" />
+                        <text x="480" y="115">&#62; 767</text>
+                    </g>
+                    <g>
+                        <path d="M65 130 l-20 0 m10 0 l0 100 m-10 0 l20 0" />
+                        <text x="30" y="180">100</text>
+                    </g>
+                </g><!-- Body end -->
+                <!-- Top -->
+                <g>
+
+                    <g>
+                        <!-- Padding between nav items and around nav item title -->
+                        <path class="svg-extension-line" d="M687 130 l0 -60 m15 60 l0 -100 m15 150 l0 -150 M770 180 l0 -150 m15 0 l0 100" />
+                        <path d="M687 70 l0 10 m0 -5 l15 0 m0 -5 l0 10 m0 -50 l0 10 m0 -5 l15 0 m0 -5 l0 10 M770 30 l0 10 m0 -5 l15 0 m0 -5 l0 10" />
+                        <text x="693" y="63">15</text>
+                        <text x="709.5" y="23">15</text>
+                        <text x="777.5" y="23">15</text>
+                    </g><!-- Padding between nav items and around nav item title end -->
+                </g><!-- Top end -->
+                <!-- Right -->
+                <g>
+                    <g>
+                        <path class="svg-extension-line" d="M880 130 l15 0 m-60 37.5 l65 0" />
+                        <path d="M895 130 l10 0 m-5 0 l0 37.5 m-5 0 l10 0" />
+                        <text x="920" y="153">40</text>
+                    </g>
+                </g><!-- Right end -->
+                <!-- Bottom -->
+                <g>
+                    <g>
+                        <!-- Padding before logo -->
+                        <path class="svg-extension-line" d="M80 230 l0 15 M95 180 l0 65" />
+                        <path d="M80 245 l0 10 m0 -5 l15 0 m0 -5 l0 10" />
+                        <text x="87.5" y="275">15</text>
+                    </g>
+                    <g>
+                        <path class="svg-extension-line" d="M175 180 l0 65 m15 -115 0 115" />
+                        <path d="M175 245 l0 10 m 0 -5 l15 0 m0 -5 l0 10" />
+                        <text x="182.5" y="275">15</text>
+                    </g>
+                    <g>
+                        <!-- Padding after last nav item -->
+                        <path class="svg-extension-line" d="M865 130 l0 115 M880 230 l0 15" />
+                        <path d="M865 245 l0 10 m0 -5 l15 0 m0 -5 l0 10" />
+                        <text x="872.5" y="275">15</text>
+                    </g>
+                    <!-- Dropdown -->
+                    <g>
+                        <g>
+                            <path class="svg-extension-line" d="M529 338 l0 15 M549 250 l0 104" />
+                            <path d="M529 353 l0 10 m0 -5 l20 0 m0 -5 l0 10" />
+                            <text x="538.5" y="378">20</text>
+                        </g>
+                        <g>
+                            <path class="svg-extension-line" d="M667 250 l0 104 M687 338 l0 15" />
+                            <path d="M667 353 l0 10 m0 -5 l20 0 m0 -5 l0 10" />
+                            <text x="676.5" y="378">20</text>
+                        </g>
+                        <g>
+
+                        </g>
+                    </g><!-- Dropdown end -->
+                    <!-- Title font size -->
+                    <g>
+                        <path d="M275 205 l50 50 l50 0" fill="none" />
+                        <text x="385" y="260">20</text>
+                    </g><!-- Title font size end -->
+                    <!-- Nav item font size -->
+                    <g>
+                        <path d="M743.5 190 l30 65 l20 0" fill="none" />
+                        <text x="805" y="260">14</text>
+                    </g><!-- Nav item font size -->
+                </g><!-- Bottom end -->
+
+            </g>
+        </g>
+</svg>

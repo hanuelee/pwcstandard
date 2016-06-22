@@ -1,0 +1,16 @@
+# Site settings
+title: PWC Web Application Style Guide
+description: > # this means to ignore newlines until "baseurl:"
+  PWC Web Application Style Guide is a commitment to provide our customers with
+  products that have our identity to ensure that when we succeed there is no
+  question that we are Prince William County government.
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+# github_username:  none
+
+# Build settings
+markdown: kramdown
+kramdown:
+    input: GFM
+permalink: none
+highlighter: rouge

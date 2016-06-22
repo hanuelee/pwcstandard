@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Vertically Collapsing Big Navigation Bar</title>
+
+    <!-- Bootstrap -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Change href to "../styles/<STYLESHEET NAME>" -->
+    <link href="../all.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <nav class="navbar pwc-navbar-big">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu-big" aria-expanded="true">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <span><img class="pwc-logo-image pull-left" src="../resources/logos/color-seal-95-web.png" alt="Prince William County Government" height="95" /></span>
+                        <div class="pwc-logo-text pull-left">Prince William County <br />Application Name</div>
+                    </a>
+                </div>
+                <div id="navbar-menu-big" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQs<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">This question</a></li>
+                                <li><a href="#">That question</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Ask a question</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">Create an Account</h1>
+                <div class="panel panel-default">
+                    <div class="panel-body" style="padding: 15px 50px;">
+                        <form>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <input type="text" class="form-control" placeholder="First Name" />
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <input type="text" class="form-control" placeholder="Last Name" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailInput">Email Address</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="Email Address" />
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordInput">Password</label>
+                                <input type="password" class="form-control" id="passwordInput" placeholder="Password" />
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordConfirmInput">Confirm Password</label>
+                                <input type="password" class="form-control" id="passwordConfirmInput" placeholder="Confirm Password" />
+                            </div>
+                            <div class="form-group">
+                                <label>Birthday</label>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <select class="form-control">
+                                            <option>January</option>
+                                            <option>February</option>
+                                            <option>March</option>
+                                            <option>April</option>
+                                            <option>May</option>
+                                            <option>June</option>
+                                            <option>July</option>
+                                            <option>August</option>
+                                            <option>September</option>
+                                            <option>October</option>
+                                            <option>November</option>
+                                            <option>December</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <input type="number" class="form-control" placeholder="Day" />
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <input type="number" class="form-control" placeholder="Year" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="genderInput">Gender</label>
+                                <select class="form-control">
+                                    <option>Female</option>
+                                    <option>Male</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneInput">Phone Number</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <a tabindex="0" data-content="This phone number may be used to verify your personal information. Standard data fees and text messaging rates may apply." data-placement="right" data-toggle="popover" data-trigger="focus"><span class="glyphicon glyphicon-earphone"></span></a>
+                                    </div>
+                                    <input type="tel" class="form-control" id="phoneInput" placeholder="Phone Number" />
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="form-group">
+                                <label for="countryInput">Country</label>
+                                <select class="form-control">
+                                    <option>Australia</option>
+                                    <option>Belgium</option>
+                                    <option>China</option>
+                                    <option>Denmark</option>
+                                    <option>Egypt</option>
+                                    <option>France</option>
+                                    <option>Germany</option>
+                                    <option>Haiti</option>
+                                    <option>India</option>
+                                    <option>Japan</option>
+                                    <option>Kenya</option>
+                                    <option>Libya</option>
+                                    <option>Mexico</option>
+                                    <option>Nigeria</option>
+                                    <option>Oman</option>
+                                    <option>Portugal</option>
+                                    <option>Qatar</option>
+                                    <option>Russia</option>
+                                    <option>South Korea</option>
+                                    <option>Taiwan</option>
+                                    <option>Ukraine</option>
+                                    <option>Venezuela</option>
+                                    <option>Yemen</option>
+                                    <option>Zambia</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="paymentTypeInput">Payment Type</label>
+                                <div class="input-group">
+                                    <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="visaRadio" value="visa" />Visa</label>
+                                    <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="payPalRadio" value="payPal" />PayPal</label>
+                                    <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="americanExpressRadio" value="americanExpress" />American Express</label>
+                                    <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="masterCardRadio" value="masterCard" />MasterCard</label>
+                                    <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="postepayRadio" value="postpay" />Postepay</label>
+                                    <label class="radio-inline"><input type="radio" name="inlineRadioOptions" id="cartaAuraRadio" value="cartaAura" />Carta Aura</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cardNumberInput">Card Number</label>
+                                <input type="text" class="form-control" id="cardNumberInput" placeholder="Card Number" />
+                            </div>
+                            <div class="form-group col-md-5" style="padding: 0;">
+                                <label for="expirationDateInput">Expiration Date</label>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <input type="number" class="form-control" placeholder="Year" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-7" style="padding: 0;">
+                                <label for="cvvInput">CVV</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <a tabindex="0" title="What is this?" data-content="CVV is the last three or four digits printed on the signature strip on the back of the card." data-placement="right" data-toggle="popover" data-trigger="focus"><span class="glyphicon glyphicon-question-sign"></span></a>
+                                    </div>
+                                    <input type="tel" class="form-control" id="phoneInput" placeholder="CVV Code" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="billingAddressInput">Billing Address</label>
+                                <input type="text" class="form-control" id="billingAddressInput" placeholder="Billing Address" />
+                            </div>
+                            <div class="form-group">
+                                <label for="cityInput">City</label>
+                                <input type="text" class="form-control" id="cityInput" placeholder="City" />
+                            </div>
+                            <div class="form-group">
+                                <label for="zipCodeInput">Zip Code</label>
+                                <input type="text" class="form-control" id="zipCodeInput" placeholder="Zip Code" />
+                            </div>
+                            <button type="submit" class="btn btn-primary pwc-btn-primary-blue" style="display: block; margin: auto;">Create an Account</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pwc-footer">
+        <div class="container">
+            <div class="pwc-footer-info">
+                <div class="pwc-footer-copyright">
+                    <p>Copyright &#169;	Prince William County Government - All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Change src to "../scripts/<SCRIPT NAME>" -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/pwc-script.js"></script>
+</body>
+</html>

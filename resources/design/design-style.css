@@ -1,0 +1,60 @@
+﻿.svg-pwc-navbar-big-lg {
+    fill: #2D6CB5;
+}
+.svg-pwc-navbar-big-logo-color {
+    fill: none;
+    stroke: #D7B161;
+    stroke-width: 2;
+}
+.svg-pwc-navbar-big-header text {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: bold;
+    fill: #FFFFFF;
+}
+.svg-pwc-navbar-big-nav text {
+    font-family: "Open Sans", serif;
+    font-size: 14px;   
+}
+.svg-pwc-navbar-big-nav-item > text {
+    fill: #FFFFFF;
+    text-anchor: middle;
+}
+.svg-pwc-navbar-big-nav-item > text.active {
+    fill: #2D6CB5;
+}
+.svg-pwc-navbar-big-nav-item > text.hover {
+    fill: #000000;
+}
+.svg-pwc-navbar-big-nav-item > rect {
+    fill: #2D6CB5;
+}
+.svg-pwc-navbar-big-nav-item > rect.active {
+    fill: #FFFFFF;
+}
+.svg-pwc-navbar-big-nav-item > rect.hover {
+    fill: #B5E3F0;
+}
+.svg-nav-dropdown-lg > g > rect {
+    fill: #FFFFFF;
+}
+.svg-nav-dropdown-lg > g > rect.hover {
+    fill: #F5F5F5;
+}
+.svg-measurements text {
+    font-size: 12px;
+    font-family: "Open Sans", serif;
+    font-weight: 600;
+    fill: #999999;
+    text-anchor: middle;
+}
+.svg-measurements path {
+    stroke-width: 2;
+    shape-rendering: geometricPrecision;
+    stroke: #999999;
+}
+.svg-measurements path.svg-extension-line {
+    stroke: #B5B5B5;
+    stroke-width: 1;
+    stroke-dasharray: 3, 3;
+}

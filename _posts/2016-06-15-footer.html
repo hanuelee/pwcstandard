@@ -1,0 +1,93 @@
+---
+layout: post
+title: "Footer"
+description: "Footer appears at the bottom of each page to display county data and copyright information."
+---
+<div class="alert alert-warning">
+    <p>
+        <span class="alert-header">Tip</span> Always put footer at the end of the document right before closing the body tag.
+    </p>
+</div>
+<!-- Tabs -->
+<ul class="nav nav-tabs example-tabs">
+    <li class="active"><a data-target="#big-footer" data-toggle="tab">Big Footer</a></li>
+    <li><a data-target="#small-footer" data-toggle="tab">Small Footer</a></li>
+</ul><!-- Tabs end -->
+<!-- Tab Content -->
+<div class="tab-content">
+    <!-- Big Footer -->
+    <div class="tab-pane active" id="big-footer">
+        <!-- Example -->
+        <div class="panel panel-default style-example">
+            <div class="panel-body">
+                <div class="pwc-footer">
+                    <div class="container-fluid">
+                        <div class="pwc-footer-nav">
+                            <ul class="pwc-footer-nav-item">
+                                <li><h1>Lorem</h1></li>
+                                <li><a href="#">Ipsum dolor</a></li>
+                                <li><a href="#">Sit amet</a></li>
+                                <li><a href="#">Consectetur adipiscing</a></li>
+                            </ul>
+                            <ul class="pwc-footer-nav-item">
+                                <li><h1>Elit</h1></li>
+                                <li><a href="#">Duis</a></li>
+                                <li><a href="#">Fermentum velit</a></li>
+                                <li><a href="#">Eu nisi blandit</a></li>
+                            </ul>
+                            <ul class="pwc-footer-nav-item">
+                                <li><h1>Volutpat</h1></li>
+                                <li><a href="#">Sed eu sodales ex</a></li>
+                                <li><a href="#">Bibendum </a></li>
+                                <li><a href="#">Gravida sapien</a></li>
+                            </ul>
+                            <ul class="pwc-footer-nav-item">
+                                <li><h1>Nunc posuere urna</h1></li>
+                                <li><a href="#">Urna</a></li>
+                                <li><a href="#">Sit amet aliquam</a></li>
+                                <li><a href="#">Mi lobortis </a></li>
+                            </ul>
+                            <ul class="pwc-footer-nav-item">
+                                <li><h1>Eu</h1></li>
+                                <li><a href="#">Cum sociis</a></li>
+                                <li><a href="#">Natoque </a></li>
+                                <li><a href="#">Penatibus et magnis</a></li>
+                            </ul>
+                        </div>
+                        <hr />
+                        <div class="pwc-footer-info">
+                            <div class="pwc-footer-copyright">
+                                <p>Copyright &#169;	Prince William County Government - All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Example end -->
+        <!-- Code -->
+        <div class="style-code">
+            {% include code_snippets/footer/big-footer.html %}
+        </div><!-- Code end -->
+    </div><!-- Big Footer end -->
+    <!-- Small Footer -->
+    <div class="tab-pane" id="small-footer">
+        <!-- Example -->
+        <div class="panel panel-default style-example">
+            <div class="panel-body">
+                <div class="pwc-footer">
+                    <div class="container-fluid">
+                        <div class="pwc-footer-info">
+                            <div class="pwc-footer-copyright">
+                                <p>Copyright &#169;	Prince William County Government - All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Example end -->
+        <!-- Code -->
+        <div class="style-code">
+            {% include code_snippets/footer/small-footer.html %}
+        </div><!-- Code end -->
+    </div><!-- Small Footer end -->
+</div><!-- Tab Content end -->

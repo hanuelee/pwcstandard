@@ -1,0 +1,286 @@
+---
+layout: post
+title: "Navigation Bar"
+description: "Navigation bars helps visitors of county websites in accessing information."
+---
+<!-- Vertically Collapsing Navigation Bar -->
+<div class="docs-subsection">
+    <h2 id="navigation-bar-vertically-collapsing-navbar">Vertically Collapsing Navigation Bar</h2>
+    <p>
+        Make the navigation bar menus stack on top of each other on small screens.
+    </p>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs example-tabs">
+        <li class="active"><a data-target="#big-navbar-vc" data-toggle="tab">Big Navigation Bar</a></li>
+        <li><a data-target="#small-navbar-vc" data-toggle="tab">Small Navigation Bar</a></li>
+    </ul><!-- Tabs end -->
+    <!-- Tabs Content -->
+    <div class="tab-content">
+        <!-- Big Navbar -->
+        <div class="tab-pane active" id="big-navbar-vc">
+            <!-- Example -->
+            <div class="panel panel-default style-example">
+                <div class="panel-body">
+                    <nav class="navbar pwc-navbar-big">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu-big" aria-expanded="true">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                                    <span><img class="pwc-logo-image pull-left" src="resources/logos/color-seal-95-web.png" alt="Prince William County Government" height="95" /></span>
+                                    <div class="pwc-logo-text pull-left">Prince William County <br />Application Name</div>
+                                </a>
+                            </div>
+                            <div id="navbar-menu-big" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQs<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">This question</a></li>
+                                            <li><a href="#">That question</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Ask a question</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div><!-- Example end -->
+            <!-- Code -->
+            <div class="style-code">
+                {% include code_snippets/navigation-bar/vertically-collapsing-big-navbar.html %}
+            </div><!-- Code end -->
+        </div><!-- Big Navbar end -->
+        <!-- Small Navbar -->
+        <div class="tab-pane" id="small-navbar-vc">
+            <!-- Example -->
+            <div class="panel panel-default style-example">
+                <div class="panel-body">
+                    <nav class="navbar pwc-navbar-small">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu-small" aria-expanded="true">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                                    <span><img class="pull-left pwc-logo-image" src="resources/logos/onecolor-seal-95-web-white.png" alt="Prince William County Government" height="37" /></span>
+                                    <div class="pwc-logo-text pull-left">Application Name</div>
+                                </a>
+                            </div>
+                            <div id="navbar-menu-small" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQs<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">This question</a></li>
+                                            <li><a href="#">That question</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Ask a question</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div><!-- Example end -->
+            <!-- Code -->
+            <div class="style-code">
+                {% include code_snippets/navigation-bar/vertically-collapsing-small-navbar.html %}
+            </div><!-- Code end -->
+        </div><!-- Small Navbar end -->
+    </div><!-- Tabs Content end -->
+    <h3>Alternative Design</h3>
+    <p>If you are not planning to use any front-end framework for your webpage, refer to the following guidelines.</p>
+    <div class="alert alert-info">The following figures' unit is in <code>px</code>.</div>
+    <object class="svg-design" type="image/svg+xml" data="resources/design/bigNavbar-lg.svg"></object>
+</div><!-- Vertically Collapsing Navigation Bar end -->
+<!-- Offcanvas Navigation Bar -->
+<div class="docs-subsection">
+    <h2 id="navigation-bar-offcanvas-navbar">Offcanvas Navigation Bar</h2>
+    <p>
+        Make navigation bar menus appear from side of the page on small screens.
+    </p>
+    <div class="alert alert-danger">
+        <p>
+            <span class="alert-header">Important</span> Both the navigation bar and the sidebar must be children of <code>.pwc-offcanvas-nav-wrapper</code> and all content that should slide with the sidebar on small screens must be children of <code>.pwc-offcanvas-content-wrapper</code>.
+        </p>
+    </div>
+    <div class="alert alert-danger">
+        <p>
+            <span class="alert-header">Important</span> JavaScript must be enabled.
+        </p>
+    </div>
+    <div class="alert alert-warning">
+        <p>
+            <span class="alert-header">Tip</span> When using left offcanvas navigation bar, make sure that parent of <code>.pwc-offcanvas-nav-wrapper</code> and <code>.pwc-offcanvas-content-wrapper</code> has property <code>overflow-x: hidden</code> to prevent horizontal scrolling.
+        </p>
+    </div>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs example-tabs">
+        <li class="active"><a data-target="#big-navbar-oc" data-toggle="tab">Big Navigation Bar</a></li>
+        <li><a data-target="#small-navbar-oc" data-toggle="tab">Small Navigation Bar</a></li>
+    </ul><!-- Tabs end -->
+    <!-- Tab Content -->
+    <div class="tab-content">
+        <!-- Big Navbar -->
+        <div class="tab-pane active" id="big-navbar-oc">
+            <!-- Example -->
+            <div class="panel panel-default style-example">
+                <div class="panel-body">
+                    <div>
+                        <div class="pwc-offcanvas-nav-wrapper pwc-offcanvas-right">
+                            <nav class="navbar pwc-navbar-big">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#side-menu-big">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="#">
+                                            <span><img class="pwc-logo-image pull-left" src="resources/logos/color-seal-95-web.png" alt="Prince William County Government" height="95" /></span>
+                                            <div class="pwc-logo-text pull-left">Prince William County <br />Application Name</div>
+                                        </a>
+                                    </div>
+                                    <div class="navbar-collapse collapse">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li class="active"><a href="#">Home</a></li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQs<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="active"><a href="#">This question</a></li>
+                                                    <li><a href="#">That question</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Ask a question</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Register</a></li>
+                                            <li><a href="#">Login</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="pwc-navbar-menu-offcanvas" id="side-menu-big">
+                                <ul class="nav nav-stacked navbar-fixed-top">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQs<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">This question</a></li>
+                                            <li><a href="#">That question</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Ask a question</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pwc-offcanvas-content-wrapper pwc-offcanvas-content-wrapper-right">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Example end -->
+            <!-- Code -->
+            <div class="style-code">
+                {% include code_snippets/navigation-bar/offcanvas-big-navbar.html %}
+            </div><!-- Code end -->
+        </div><!-- Big Navbar end -->
+        <!-- Small Navbar -->
+        <div class="tab-pane" id="small-navbar-oc">
+            <!-- Example -->
+            <div class="panel panel-default style-example">
+                <div class="panel-body">
+                    <div>
+                        <div class="pwc-offcanvas-nav-wrapper pwc-offcanvas-left">
+                            <nav class="navbar pwc-navbar-small">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#side-menu-small">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="#">
+                                            <span><img class="pull-left pwc-logo-image" src="resources/logos/onecolor-seal-95-web-white.png" alt="Prince William County Government" height="37" /></span>
+                                            <div class="pwc-logo-text pull-left">Application Name</div>
+                                        </a>
+                                    </div>
+                                    <div class="navbar-collapse collapse">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li class="active"><a href="#">Home</a></li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQs<span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">This question</a></li>
+                                                    <li><a href="#">That question</a></li>
+                                                    <li role="separator" class="divider"></li>
+                                                    <li><a href="#">Ask a question</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Register</a></li>
+                                            <li><a href="#">Login</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="pwc-navbar-menu-offcanvas" id="side-menu-small">
+                                <ul class="nav nav-stacked navbar-fixed-top">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQs<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">This question</a></li>
+                                            <li><a href="#">That question</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Ask a question</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pwc-offcanvas-content-wrapper pwc-offcanvas-content-wrapper-right">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Example end -->
+            <!-- Code -->
+            <div class="style-code">
+                {% include code_snippets/navigation-bar/offcanvas-small-navbar.html %}
+            </div><!-- Code end -->
+        </div><!-- Small Navbar end -->
+    </div><!-- Tab Content end -->
+</div><!-- Offcanvas Navigation Bar end -->

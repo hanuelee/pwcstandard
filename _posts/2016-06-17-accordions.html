@@ -1,0 +1,119 @@
+---
+layout: post
+title: "Accordions"
+description: "Accordions are a list of headers that can be clicked to hide or reveal additional content."
+---
+<!-- Tabs -->
+<ul class="nav nav-tabs example-tabs">
+    <li class="active"><a data-target="#single-content-accordion" data-toggle="tab">Single Content Accordion</a></li>
+    <li><a data-target="#list-accordion" data-toggle="tab">List Accordion</a></li>
+</ul><!-- Tabs end -->
+<!-- Tab Content -->
+<div class="tab-content">
+    <!-- Single Content Accordion -->
+    <div class="tab-pane active" id="single-content-accordion">
+        <!-- Example -->
+        <div class="panel panel-default style-example">
+            <div class="panel-body">
+                <div class="pwc-accordion">
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body1" aria-expanded="true">Something important<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body1">
+                            <div class="pwc-accordion-content-wrapper">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed ullamcorper massa, ac venenatis elit. Praesent elit magna, bibendum id placerat vel, ullamcorper vestibulum nibh. Praesent vel tortor orci. Phasellus viverra lacus ac ornare auctor. Cras ornare lacus nunc, vitae aliquet arcu condimentum nec. Duis porta neque nisl, at dignissim leo congue non. Phasellus condimentum euismod magna vitae consectetur. Morbi fermentum metus sem. Aliquam id tellus eu libero faucibus condimentum. Integer id est ac dolor condimentum eleifend. Vivamus in mauris et elit ultrices pharetra. Morbi quis massa vitae urna interdum ultrices luctus a mi. Sed a metus maximus, pharetra quam ac, molestie eros. In tincidunt vel ex eget vehicula. Vivamus lorem tortor, varius sed ornare non, pellentesque ut erat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body2" aria-expanded="true">Another thing that's important<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body2">
+                            <div class="pwc-accordion-content-wrapper">
+                                <p>
+                                    Fusce pellentesque sed nulla ut dignissim. Mauris tincidunt ipsum a dolor sollicitudin, in luctus velit consequat. Vivamus in ex blandit, bibendum metus et, consequat metus. Phasellus placerat at ex nec fringilla. Cras ac odio posuere odio dignissim luctus. Praesent gravida, est vel varius consequat, nisi purus cursus libero, vitae tempor velit enim laoreet orci. Donec dapibus lectus urna, sed elementum eros egestas eu. Donec at tortor mollis, vulputate tellus non, auctor neque.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body3" aria-expanded="true">One more thing<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body3">
+                            <div class="pwc-accordion-content-wrapper">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae nibh ex. Cras turpis mi, pharetra eget bibendum vel, rhoncus dictum mauris. Vestibulum tristique nunc est, blandit tempor odio gravida quis. Morbi elementum augue non aliquam ultricies. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur fringilla gravida ex, a convallis odio tincidunt et. Phasellus sit amet venenatis nibh.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Example end -->
+        <!-- Code -->
+        <div class="style-code">
+            {% include code_snippets/accordions/single-content-accordion.html %}
+        </div>
+    </div><!-- Single Content Accordion end -->
+    <!-- List Accordion -->
+    <div class="tab-pane" id="list-accordion">
+        <!-- Example -->
+        <div class="panel panel-default style-example">
+            <div class="panel-body">
+                <div class="pwc-accordion">
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body4" aria-expanded="true">Something important<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body4">
+                            <div class="pwc-accordion-list-wrapper">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body5" aria-expanded="true">Another thing that's important<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body5">
+                            <div class="pwc-accordion-list-wrapper">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                    <li class="list-group-item">Three</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body6" aria-expanded="true">One more thing<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body6">
+                            <div class="pwc-accordion-list-wrapper">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                    <li class="list-group-item">Three</li>
+                                    <li class="list-group-item">Four</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Example end -->
+        <!-- Code -->
+        <div class="style-code">
+            {% include code_snippets/accordions/list-accordion.html %}
+        </div><!-- Code end -->
+    </div><!-- List Accordion end -->
+</div><!-- Tab Content end -->

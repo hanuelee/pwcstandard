@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Vertically Collapsing Small Navigation Bar</title>
+
+    <!-- Bootstrap -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Change href to "../styles/<STYLESHEET NAME>" -->
+    <link href="../all.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <nav class="navbar pwc-navbar-small">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu-small" aria-expanded="true">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <span><img class="pull-left pwc-logo-image" src="../resources/logos/onecolor-seal-95-web-white.png" alt="Prince William County Government" height="37" /></span>
+                        <div class="pwc-logo-text pull-left">Application Name</div>
+                    </a>
+                </div>
+                <div id="navbar-menu-small" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQs<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">This question</a></li>
+                                <li><a href="#">That question</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Ask a question</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron col-md-12">
+                <h1>Lorem Ipsum</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac metus elit. Aliquam nulla lectus, mollis sit amet dignissim in, euismod viverra nibh. Ut vel velit consequat, lacinia nisl eu, posuere lorem. In id dolor interdum, fermentum erat vitae, pulvinar elit. Proin vitae nisi nisl. Aliquam condimentum urna eget ante dictum, vitae viverra est ultrices. Sed eget porttitor massa. Sed viverra metus ut mattis posuere. Proin leo nibh, placerat nec felis non, mollis accumsan mauris. Vestibulum tincidunt odio nec nibh placerat euismod. Phasellus vitae magna ac arcu vehicula finibus ut a diam. Nunc in maximus magna. Nunc gravida nec justo aliquam rhoncus.
+                </p>
+                <p>
+                    <a class="btn btn-primary pwc-btn-primary-green" href="#" role="button">Learn More</a>
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pwc-accordion">
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body1" aria-expanded="true">Something important<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body1">
+                            <div class="pwc-accordion-list-wrapper">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body2" aria-expanded="true">Another thing that's important<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body2">
+                            <div class="pwc-accordion-list-wrapper">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                    <li class="list-group-item">Three</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body3" aria-expanded="true">One more thing<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body3">
+                            <div class="pwc-accordion-list-wrapper">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                    <li class="list-group-item">Three</li>
+                                    <li class="list-group-item">Four</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body4" aria-expanded="true">Another<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body4">
+                            <div class="pwc-accordion-list-wrapper">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                    <li class="list-group-item">Three</li>
+                                    <li class="list-group-item">Four</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body5" aria-expanded="true">Another one...<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body5">
+                            <div class="pwc-accordion-list-wrapper">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                    <li class="list-group-item">Three</li>
+                                    <li class="list-group-item">Four</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body6" aria-expanded="true">This one is the most important<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body6">
+                            <div class="pwc-accordion-list-wrapper">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                    <li class="list-group-item">Three</li>
+                                    <li class="list-group-item">Four</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default pwc-accordion-item">
+                        <div class="panel-heading pwc-accordion-heading">
+                            <a data-toggle="collapse" data-target="#dummy-accordion-body7" aria-expanded="true">That was a lie<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+                        </div>
+                        <div class="panel-collapse collapse pwc-accordion-body" id="dummy-accordion-body7">
+                            <div class="pwc-accordion-list-wrapper">
+                                <ul class="list-group">
+                                    <li class="list-group-item">One</li>
+                                    <li class="list-group-item">Two</li>
+                                    <li class="list-group-item">Three</li>
+                                    <li class="list-group-item">Four</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pwc-footer">
+        <div class="container">
+            <div class="pwc-footer-info">
+                <div class="pwc-footer-copyright">
+                    <p>Copyright &#169;	Prince William County Government - All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Change src to "../scripts/<SCRIPT NAME>" -->
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/pwc-script.js"></script>
+</body>
+</html>

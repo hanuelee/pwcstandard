@@ -14,5 +14,3 @@ kramdown:
     input: GFM
 permalink: none
 highlighter: rouge
-# Change according to subdomain
-baseurl: /pwcstandard
